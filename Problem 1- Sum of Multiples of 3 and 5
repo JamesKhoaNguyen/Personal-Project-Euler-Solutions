@@ -1,0 +1,13 @@
+import numpy as np
+
+#code to compute multiples of 3 and 5
+#O(n) implementation
+
+test_array = np.arange(3,1000,1)
+test_sum = 0
+for i in range(len(test_array)):
+    if (((test_array[i]%3) == 0) or ((test_array[i]%5)==0)):
+        test_sum = test_sum + test_array[i]
+
+print test_sum
+        
